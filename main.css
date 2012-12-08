@@ -1,0 +1,59 @@
+body {
+  font-family: 'lucida sans', Arial, sans-serif;
+}
+
+#header, #content, #footer {
+  width: 960px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+#header img#logo {
+  display: inline;
+}
+
+ul#topbar {
+  background-color: black;
+  height: 40px;
+  width: 100%;
+}
+
+ul#topbar {
+  margin: 0px;
+  padding: 0;
+  list-style: none;
+}
+
+ul#topbar li {
+  display: inline;
+}
+
+ul#topbar li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 10px;
+  font-size: 12px;
+  float: left;
+  width: 140px;
+}
+
+ul#topbar li a:hover {
+  color: #666;
+}
+
+#content .heading {
+  text-align: center;
+}
+
+#content .important {
+  
+}
+
+#footer ul#contact {
+  font-size: 10px;
+  list-style: none;
+}
+
+#footer ul#contact li {
+  text-align: center;
+}
