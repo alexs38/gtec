@@ -1,1 +1,2 @@
 permalink: /:title.html
+coffeescript_folder: _coffeescript/*.coffee

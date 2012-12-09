@@ -1,11 +1,32 @@
 body {
-  font-family: 'lucida sans', Arial, sans-serif;
+  font-family: 'trebuchet ms', 'lucida sans', Arial, sans-serif;
+  background-image: linear-gradient(bottom, rgb(27,34,112) 44%, rgb(47,80,163) 72%, rgb(36,90,171) 86%);
+  background-image: -o-linear-gradient(bottom, rgb(27,34,112) 44%, rgb(47,80,163) 72%, rgb(36,90,171) 86%);
+  background-image: -moz-linear-gradient(bottom, rgb(27,34,112) 44%, rgb(47,80,163) 72%, rgb(36,90,171) 86%);
+  background-image: -webkit-linear-gradient(bottom, rgb(27,34,112) 44%, rgb(47,80,163) 72%, rgb(36,90,171) 86%);
+  background-image: -ms-linear-gradient(bottom, rgb(27,34,112) 44%, rgb(47,80,163) 72%, rgb(36,90,171) 86%);
+
+  background-image: -webkit-gradient(
+  	linear,
+  	left bottom,
+  	left top,
+  	color-stop(0.44, rgb(27,34,112)),
+  	color-stop(0.72, rgb(47,80,163)),
+  	color-stop(0.86, rgb(36,90,171))
+  );
 }
 
-#header, #content, #footer {
-  width: 960px;
+img {
   text-align: left;
-  margin: 0 auto;
+}
+
+#container {
+  width: 760px;
+  height: 150%;
+  text-align: left;
+  margin: 0px auto;
+  padding: 50px;
+  background-color: white;
 }
 
 #header img#logo {
@@ -28,13 +49,22 @@ ul#topbar li {
   display: inline;
 }
 
+ul#topbar li.long a {
+  width: 140px;
+}
+
+ul#topbar li.short a {
+  width: 70px;
+}
+
 ul#topbar li a {
   color: white;
   text-decoration: none;
   padding: 10px 10px;
   font-size: 12px;
   float: left;
-  width: 140px;
+  width: 100px;
+  text-align: center;
 }
 
 ul#topbar li a:hover {

@@ -3,6 +3,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="js/underscore.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/slideshow.js"></script>
     
     <title>{{ page.title }}</title>
     
@@ -10,28 +13,30 @@
   </head>
   
   <body>
-    <div id="header">
-      <img src="/images/logo.jpg" height=125 alt="GTEC"></img>
-      <ul id="topbar">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/letter.html">Letter from the Director</a></li>
-        <li><a href="/vision.html">Vision & Mission</a></li>
-        <li><a href="/need.html">The Need</a></li>
-        <li><a href="/team.html">The Team</a></li>
-        <li><a href="/partners">Partners</a></li>
-      </ul>
-    </div>
-    
-    <div id="content"> {{ content }}</div>
-    <hr />
-    <div id="footer">
-      <ul id="contact">
-        <li>Global Technology and Engineering Consortium</li>
-        <li>1000 Olin Way</li>
-        <li>Needham, MA 02492</li>
-        <li>gtec@olin.edu</li>
-        <li>(781) 292-2890</li>
-      </ul>
+    <div id="container">
+      <div id="header">
+        <img src="/images/logo.jpg" height=125 alt="GTEC"></img>
+        <ul id="topbar">
+          <li class="short"><a href="/index.html">Home</a></li>
+          <li class="long"><a href="/letter.html">Letter from the Director</a></li>
+          <li><a href="/vision.html">Vision & Mission</a></li>
+          <li><a href="/need.html">The Need</a></li>
+          <li><a href="/team.html">The Team</a></li>
+          <li><a href="/partners">Partners</a></li>
+        </ul>
+      </div>
+
+      <div id="content">{{ content }}</div>
+      <div id="footer">
+        <hr />
+        <ul id="contact">
+          <li>Global Technology and Engineering Consortium</li>
+          <li>1000 Olin Way</li>
+          <li>Needham, MA 02492</li>
+          <li>gtec@olin.edu</li>
+          <li>(781) 292-2890</li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>
