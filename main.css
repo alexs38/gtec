@@ -10,10 +10,22 @@ p, li, a {
 }
 
 img.intext {
-  text-align: left;
-  float: left;
   padding-right: 25px;
   padding-bottom: 10px;
+  text-align: left;
+  float: left;
+}
+
+img.intext.l {
+  text-align: left;
+  float: left;
+}
+
+img.intext.r {
+  padding-right: 0px;
+  padding-left: 25px;
+  text-align: right;
+  float: right;
 }
 
 p#quote {
