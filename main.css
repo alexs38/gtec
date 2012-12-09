@@ -1,32 +1,34 @@
 body {
-  font-family: 'trebuchet ms', 'lucida sans', Arial, sans-serif;
-  background-image: linear-gradient(bottom, rgb(27,34,112) 44%, rgb(47,80,163) 72%, rgb(36,90,171) 86%);
-  background-image: -o-linear-gradient(bottom, rgb(27,34,112) 44%, rgb(47,80,163) 72%, rgb(36,90,171) 86%);
-  background-image: -moz-linear-gradient(bottom, rgb(27,34,112) 44%, rgb(47,80,163) 72%, rgb(36,90,171) 86%);
-  background-image: -webkit-linear-gradient(bottom, rgb(27,34,112) 44%, rgb(47,80,163) 72%, rgb(36,90,171) 86%);
-  background-image: -ms-linear-gradient(bottom, rgb(27,34,112) 44%, rgb(47,80,163) 72%, rgb(36,90,171) 86%);
-
-  background-image: -webkit-gradient(
-  	linear,
-  	left bottom,
-  	left top,
-  	color-stop(0.44, rgb(27,34,112)),
-  	color-stop(0.72, rgb(47,80,163)),
-  	color-stop(0.86, rgb(36,90,171))
-  );
+  font-family: droid-sans-1, droid-sans-2, 'lucida sans', Arial, sans-serif;
+  background-color: #E9E9E9;
+  height: 150%;
 }
 
-img {
+p, li, a {
+  font-size: 12.5px;
+  text-align: justify;
+}
+
+img.intext {
   text-align: left;
+  float: left;
+  padding-right: 25px;
+  padding-bottom: 10px;
+}
+
+p#quote {
+  padding: 0px 35px;
 }
 
 #container {
-  width: 760px;
+  width: 750px;
   height: 150%;
   text-align: left;
   margin: 0px auto;
   padding: 50px;
   background-color: white;
+  -moz-box-shadow: 0 0 30px 5px #999;
+  -webkit-box-shadow: 0 0 30px 5px #999;
 }
 
 #header img#logo {
@@ -50,11 +52,11 @@ ul#topbar li {
 }
 
 ul#topbar li.long a {
-  width: 140px;
+  width: 150px;
 }
 
 ul#topbar li.short a {
-  width: 70px;
+  width: 60px;
 }
 
 ul#topbar li a {
@@ -68,15 +70,43 @@ ul#topbar li a {
 }
 
 ul#topbar li a:hover {
-  color: #666;
+  color: #ccc;
 }
 
 #content .heading {
   text-align: center;
 }
 
-#content .important {
-  
+ul#pilots {
+  list-style: none;
+}
+
+#main {
+  float: left;
+  width: 500px;
+}
+
+#sidebar {
+  padding-top: 25px;
+  float: right;
+  width: 200px;
+}
+
+#sidebar li {
+  padding-bottom: 5px;
+}
+
+#sidebar a {
+  color: #666;
+  text-decoration: none;
+}
+
+#sidebar strong, #sidebar ul, #sidebar ul li {
+  padding-left: 10px;
+}
+
+#footer {
+  clear: both;
 }
 
 #footer ul#contact {
