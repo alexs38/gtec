@@ -115,6 +115,12 @@ p#allcaption {
 }
 
 /* ^^see above^^*/
+
+a.inline {
+  text-decoration: underline;
+  color: black;
+}
+
 #main {
   float: left;
   width: 500px;
