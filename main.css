@@ -93,6 +93,28 @@ ul#pilots {
   list-style: none;
 }
 
+img.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* replace this nastiness with semantic <figure> and <figcaption> code */
+#img1 {
+  float: left;
+  width: 225px;
+}
+
+#img2 {
+  float: right;
+  width: 250px;
+}
+
+p#allcaption {
+  float: left;
+}
+
+/* ^^see above^^*/
 #main {
   float: left;
   width: 500px;
