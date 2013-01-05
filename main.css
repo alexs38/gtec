@@ -161,3 +161,9 @@ a.inline {
 #footer #designer {
   text-align: center;
 }
+
+.block
+{
+  clear:both;
+  margin-top:40px;
+}
