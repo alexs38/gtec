@@ -148,7 +148,8 @@ nav ul > li {
 }
 
 nav > ul > li > a {
-  margin-left: 50px
+  margin-left: 50px;
+  margin-top: 6px;
 }
 
 nav  ul > li > a {
