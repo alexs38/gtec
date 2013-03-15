@@ -33,7 +33,7 @@ p#quote {
 }
 
 #container {
-  width: 750px;
+  width: 900px;
   height: 150%;
   text-align: left;
   margin: 0px auto;
@@ -45,44 +45,6 @@ p#quote {
 
 #header img#logo {
   display: inline;
-}
-
-ul#topbar {
-  background-color: black;
-  height: 40px;
-  width: 100%;
-}
-
-ul#topbar {
-  margin: 0px;
-  padding: 0;
-  list-style: none;
-}
-
-ul#topbar li {
-  display: inline;
-}
-
-ul#topbar li.long a {
-  width: 160px;
-}
-
-ul#topbar li.short a {
-  width: 60px;
-}
-
-ul#topbar li a {
-  color: white;
-  text-decoration: none;
-  padding: 10px 10px;
-  font-size: 12px;
-  float: left;
-  width: 100px;
-  text-align: center;
-}
-
-ul#topbar li a:hover {
-  color: #ccc;
 }
 
 #content .heading {
@@ -168,3 +130,59 @@ a.inline {
   overflow:hidden;
   width:100%; /* Force hasLayout in IE */
 }
+
+nav {
+  width: 100%;
+  background-color: black;
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  height: 20px;
+}
+
+nav ul > li {
+  display: inline-block;
+  width: 160px;
+}
+
+nav > ul > li > a {
+  margin-left: 50px;
+  margin-top: 6px;
+}
+
+nav  ul > li > a {
+  text-decoration: none;
+  padding: 12px 0;
+  display: block;
+  color: white;
+}
+
+nav ul > li ul {
+  display: none;
+}
+
+nav ul > li:hover ul {
+  display: block;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 160px;
+  background-color: black;
+}
+
+nav ul > li:hover ul li {
+  display: block;
+  float: none;
+  background-color: black;
+}
+
+nav ul > li:hover ul li a {
+  padding-left: 8px;
+}
+
+nav li:hover > a {
+  color: gray;
+}
+
